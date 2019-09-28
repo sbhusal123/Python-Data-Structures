@@ -14,8 +14,23 @@ def splitText(function):
         func = function()
         splitted = func.split()
         return splitted
-
+    
     return wrapper
+
+
+def listadd(function):
+    def wrapper(k):
+        x = function(k)
+        y = sum(x)
+        return y
+    return wrapper
+
+@listadd
+def init_list(x):
+    return x
+
+# x = [1,2,3,4] 
+# print(init_list(x)) # returns 10
 
 
 @uppercase
@@ -28,7 +43,6 @@ def say_hi():
 @splitText
 def getText():
     return "This will be splitted into list"
-
 # print(getText()) output: ['This', 'will', 'be', 'splitted', 'into', 'list']
 
 
