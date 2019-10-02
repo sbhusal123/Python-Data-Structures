@@ -151,3 +151,30 @@ print(x*3) # ["hi","hi","hi"]
 x =("hi",)
 print(x*3) # ('hi', 'hi', 'hi')
 ```
+
+# 5. Checking Membership
+* Tests weather an item is or not in sequence.
+
+* *Syntax1*: ```item in <variable_name> ``` Returns : **true if exists**,**false if doesn't exists**.
+* *Syntax2*: ```item not in <variable_name> ``` Returns : **false if exists**,**true if doesn't exists**.
+
+## 5.1 String
+```python
+#string
+x = "surya"
+print("u" in x)  # true
+```
+
+## 5.2 List
+```python
+#list
+x = ["surya","ramesh","kiran"]
+print("asd" in x)  # false
+```
+
+## 5.3 Tuple
+```python
+#tuple
+x = (1,2,3)
+print(1 in x)  # true
+```
