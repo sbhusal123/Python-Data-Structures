@@ -31,7 +31,7 @@ print(x[1]) # output = ramesh
 
 # 2.Slicing
 * Slices out substring, substring, subtuples, using indexes.
-* *Syntax* : [start:end+1:step]. Mathematical equivalence of indexing: [start,end)    
+* **Syntax : [start:end+1:step]**. *Mathematical equivalence of indexing: [start,end)*    
 
 ## 2.1 Slicing Of String:
 ```python
@@ -84,5 +84,6 @@ print(x[:-2]) # comput
 ```
 
 ```python
+"""First element accessed from right"""
 print(x[-8]) # c
 ``` 
