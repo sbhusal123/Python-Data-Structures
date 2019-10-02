@@ -29,7 +29,7 @@ x = ('surya','ramesh','kiran')
 print(x[1]) # output = ramesh
 ```
 
-#2. Slicing
+# 2.Slicing
 * Slices out substring, substring, subtuples, using indexes.
 * *Syntax* : [start:end+1:step]. Mathematical equivalence of indexing: [start,end)    
 
