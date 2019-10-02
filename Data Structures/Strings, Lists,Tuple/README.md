@@ -31,11 +31,7 @@ print(x[1]) # output = ramesh
 
 # 2.Slicing
 * Slices out substring, substring, subtuples, using indexes.
-* **Syntax : [start:end+1:step]**. ``Mathematical equivalence of indexing: [start,end)``
-
-* ``If start is not declared, it's value is set to zero`` 
-* ``If end is not declared, it's value is set to length.``
-* ``If step is not declared, it's value is set to 1.``    
+* **Syntax : [start:end+1:step]**. ``Mathematical equivalence of indexing: [start,end)``    
 
 ## 2.1 Slicing Of String:
 ```python
@@ -89,4 +85,69 @@ print(x[:-2]) # comput
 ```python
 """First element accessed from right"""
 print(x[-8]) # c
+```
+
+* ``If start is not declared, it's value is set to zero`` 
+* ``If end is not declared, it's value is set to length.``
+* ``If step is not declared, it's value is set to 1.``
+
+**Note: Slicing of tuples,list is same as that of string.** 
+
+# 3. Concatenating
+* Combining of two same data types into one.
+* Often achieved by using **+** sign. i.e <var1>+<var2>
+
+## 3.1 Concatenating of Strings:
+```python
+# string
+x = "This is"
+y = "going to be con-catinated."
+print(x+y) # This is going to be con-catinated. 
+```
+
+## 3.2 Concatenating of List: 
+```python
+#list
+x = ["This","is"]
+y = ["going", "to","be","contatinated."] # ["This","is","going", "to","be","contatinated."]
+print(x+y)
+```
+
+## 3.3 Concatenating of Tuple:
+```python
+#tuple
+x = ('Hello','')
+y = ('Hi','') # ('Hello','','Hi','')
+print(x+y)
+```
+**If defining tuples with one item use ",""** i.e
+
+```python
+x = ("hi",)  
+y = ("hello",)
+print(x+y)
+```  
+
+# 4. Multiplying:
+* Repeated adding of self for number of times.
+* Achieved using ```*``` sign. i.e <data_type>*3
+
+## 4.1. Multiplying of String:
+```python
+#string:
+x = "a"*3
+print(x) # aaa
+```
+
+## 4.2. Multiplying of List:
+```python
+#list
+x = ["hi"]
+print(x*3) # ["hi","hi","hi"] 
+```
+## 4.3. Multiplying of Tuple:
+```python
+#tuple:
+x =("hi",)
+print(x*3) # ('hi', 'hi', 'hi')
 ```

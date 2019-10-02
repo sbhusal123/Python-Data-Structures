@@ -33,3 +33,4 @@ print(x[:-2])  # comput
 print(x[-8])  # c
 
 # slicing of tuples
+
