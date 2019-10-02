@@ -178,3 +178,54 @@ print("asd" in x)  # false
 x = (1,2,3)
 print(1 in x)  # true
 ```
+
+# 6. Iterating
+* Iterating through the items in sequence:
+* Index and item can be evaluated by passing 
+the variable to inbuilt function **enumerate.**  
+
+## 6.1 Iterating through String:
+```python
+# string enumeration
+s = "hello"
+for index,item in enumerate(s):
+    print("item={item}, index={index}".format(item=item,index=index))
+```  
+
+**Output:**
+```
+tem=h, index=0
+item=e, index=1
+item=l, index=2
+item=l, index=3
+item=o, index=4
+```
+## 6.2 Iterating through list:
+```python
+x = ["hello","hi"]
+for index,item in enumerate(x):
+    print("item={item}, index={index}".format(item=item,index=index))
+```  
+
+**Output:**
+```
+item=hello, index=0
+item=hi, index=1
+```
+
+## 6.3 Iterating through Tuples:
+```python
+# tuple enumeration
+y = (9,8,4,3,1,2)
+for index,item in enumerate(y):
+    print("item={item}, index={index}".format(item=item,index=index))
+```
+**Output:**
+```
+item=9, index=0
+item=8, index=1
+item=4, index=2
+item=3, index=3
+item=1, index=4
+item=2, index=5
+```
