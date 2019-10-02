@@ -269,7 +269,7 @@ x = 'hello'
 print(min(x))
 ```
 
-**Output :** ``e``. Because e<h<l<o in lexicographic ordering.
+**Output :** ``e``. Because e < h < l < o in lexicographic ordering.
 
 ## 7.2 Minimum Element in List:
 ```python
@@ -299,7 +299,7 @@ print(max(x))
 ```
 **Output:** ``e``
 
-**Similar to min case of list and tuples data types.**
+**Similar to min in case of list and tuples data types.**
 
 
 
