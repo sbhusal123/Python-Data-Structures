@@ -229,3 +229,29 @@ item=3, index=3
 item=1, index=4
 item=2, index=5
 ```
+
+# 7. Number of Items:
+* Count the number of item in sequence.
+* Basically inbuilt function **len()** in used.
+* *Syntax*: len(variable_name)
+
+## 7.1 String:
+```python
+x = "hello, this is me"
+print(len(x))  # counts the space too.
+```
+
+**Output:** ``17``
+> Counts the spaces too
+
+## 7.2 Lists:
+```python
+# list
+y = ["hello","this","is","me"]
+print(len(y))
+```
+
+**Output:** ``4``
+
+``Note: Same is in the case of tuple``
+
