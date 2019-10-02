@@ -255,3 +255,57 @@ print(len(y))
 
 ``Note: Same is in the case of tuple``
 
+# 7. Minimum
+* finds the minimum item in sequence [lexicographically](https://en.wikipedia.org/wiki/Lexicographical_order).
+* Alphabetic **or** numeric types. But cannot be mixed. 
+> Caution !: Not to be used in mixed data types. eg. in case of list [1,"string"].
+
+
+ 
+## 7.1 Minimum Element in String:
+```python
+#string
+x = 'hello'
+print(min(x))
+```
+
+**Output :** ``e``. Because e<h<l<o in lexicographic ordering.
+
+## 7.2 Minimum Element in List:
+```python
+#list
+y = [9,2,6,1,0]
+print(min(y))
+``` 
+**Output :** ``0``
+
+## 7.3 Tuple:
+```python
+#tuple
+y = ('@','#','$','a')
+print(min(y))
+```
+**Output:** ``#``.  Because the ASCII value of # is comparatively smaller.i.e
+``ASCII(#) < ASCII(@) < ASCII($) < ASCII(a)``
+
+# 8. Maximum:
+* finds the maximum item in sequence [lexicographically](https://en.wikipedia.org/wiki/Lexicographical_order).
+* Alphabetic **or** numeric types. But cannot be mixed.
+* *Syntax:* max(variable)
+
+```python
+x = "abcde"
+print(max(x)) 
+```
+**Output:** ``e``
+
+**Similar to min case of list and tuples data types.**
+
+
+
+
+
+
+
+
+
