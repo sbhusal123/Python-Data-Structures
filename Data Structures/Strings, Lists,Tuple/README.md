@@ -299,7 +299,7 @@ print(max(x))
 ```
 **Output:** ``e``
 
-**Similar to min in case of list and tuples data types.**
+*Similar to min in case of list and tuples data types.*
 
 
 
