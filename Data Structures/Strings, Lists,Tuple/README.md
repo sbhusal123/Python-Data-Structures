@@ -302,10 +302,23 @@ print(max(x))
 *Similar to min in case of list and tuples data types.*
 
 
+# 9. Sum
+* Finds the sum of items in sequence.
+* Entire sum must be numeric.
 
+## 9.1 Sum of elements in list:
+```python
+# list
+x = [1,2,3,4,5]
+print(sum(x))  # 15
+print(sum(x[-2:]))  # 4+5 = 9
+print(sum(x[0:4:2]))  # 1+3 = 4
+```
 
-
-
-
-
-
+## 9.2 Sum of elements in tuples:
+```python
+# tuples
+x = (5,6,7,8)
+print(sum(x)) # 5+6+7+8 = 26
+print(sum(x[0:3:2]))  # 5+7 = 12
+```
