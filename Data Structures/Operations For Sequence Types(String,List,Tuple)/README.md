@@ -322,3 +322,102 @@ x = (5,6,7,8)
 print(sum(x)) # 5+6+7+8 = 26
 print(sum(x[0:3:2]))  # 5+7 = 12
 ```
+
+# 10. Sorting
+* Returns a new list of items sorted in order.
+* Does not changes the original list.
+
+## 10.1 Sorting Of String:
+```python
+x = "hello"
+print(sorted(x))
+```
+**Output** : ``['e', 'h', 'l', 'l', 'o']``
+
+## 10.2 Sorting Of List:
+```python
+y = ["dat","rat","apple"]
+print(sorted(y))
+```
+**Output** : ``['apple', 'dat', 'rat']``
+
+## 10.3 Sorting Of Tuples:
+```python
+z = (5,3,1,8,6)
+print(sorted(z))
+```
+**Output** : ``[1, 3, 5, 6, 8]``
+
+**Note:** For every data type, a resulting data type after sorting is list.
+
+# 11. Sorting by second letter
+* Add a key parameter lambda function to return the second character.
+
+```python
+x = ["Kelvin","Niklas","Jenny","Craig"]
+print(sorted(x, key=lambda k: k[1]))
+``` 
+**Output:** ``['Kelvin', 'Jenny', 'Niklas', 'Craig']``
+
+**The word *key* here is defined parameter name for inbuilt function *sorted()*,
+ k is arbitart variable name**
+
+Lambda is a inbuilt [functional programming]((https://kite.com/blog/python/functional-programming/)) 
+keyword in python.
+
+**Same applies for tuples and other data structures.**
+
+# 12. Count of item:
+* Counts the item in the data structure.
+* *Syntax*: var_name.count(item)
+* Basically *count()* is the member function of the pre-defined data-structure.
+
+## 12.1 Counting of item in string
+```python
+x = "hippo"
+print(x.count("p"))
+```
+**Output:** ``2``
+
+## 12.2 Counting of item in List
+```python
+y = ['@','$','*','p','#','#','$','#']
+print(y.count("#"))
+```
+**Output:** ``3``
+
+## 12.2 Counting of item in Tuple
+```python
+z = (1,2,3,1,1,2,4,1)
+print(z.count(1))
+```
+**Output:** ``4``
+
+# 13. Index Of Item
+* Returns the **index of the first occurance** of item.
+* *Syntax:* var_name.index(item)
+* `index()` function is member function of the inbuilt data structure. 
+
+## 13.1 Indexing Of String:
+```python
+x = "qweert"
+print(x.index("e"))
+```
+
+**Output:** ``2``
+
+## 13.2 Indexing Of List:
+```python
+x = ["cat","tiger","cat","rat"]
+print(x.index("cat"))
+```
+
+**Output:** ``0``
+
+## 13.3 Indexing of Tuple:
+```python
+z = (0,1,1,2,3,4)
+print(z.index(1))
+```
+**Output:** ``1``
+
