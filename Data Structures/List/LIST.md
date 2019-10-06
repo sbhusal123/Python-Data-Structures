@@ -125,19 +125,32 @@ print(y) # [8, 6, 7, [1, 2, 3, 4]]
 
 ## 1.8. Sorting (In place)
 * **In place sorting.**
-* Sorts the list in place.
+* Sorts the items of list in **ascending order**.
 
 ```python
 # inplace sorting
 x = [5,2,8,5,1]
-x.sort() 
-print(x)
+x.sort()
+print(x) # [1, 2, 5, 5, 8]
 
 # sorting by creating new list
 y = [5,2,8,5,1]
 k = sorted(y)
-print(k)
+print(k) # [1, 2, 5, 5, 8]
+
 ```
 
 ``Note: sorted(x) returns a new list without changing the original. 
 While x.sort() puts the item of x in sorted order(in-place).``
+
+**Reverse Sorting:**
+* Sorts items of list in descending.
+* Can be achieved using *reverse=True* parameter to the sort function.
+
+```python
+# reverse sorting
+l = [5,1,7,3,6]
+l.sort(reverse=True)
+print(l) # [7, 6, 5, 3, 1]
+```
+
