@@ -24,7 +24,7 @@ print(my_tuple) # (1,2,3,4)
 ## 2. Immutable property of tuple
 * Tuples are immutable, **but member objects may be mutable.**
 
-For example. If tuple contains any mutable data-structure then such member function
+For example. If tuple contains any mutable data-structure then such member 
 can be mutable.
 
 **Immutable property of tuple**
