@@ -93,4 +93,15 @@ for k, v in x.items(): # k,v are arbitrary variables
 ```
 
 **Output:** ``a = 1 b = 2``
- 
+
+## 9. Dictionary keys as argument names to the function
+```python
+def foo(name, address):
+    print('{n} lives at {a}'.format(n=name, a=address))
+
+x = {'name': 'Ram',
+     'address': 'Bhopal'
+}
+
+foo(**x)
+```
