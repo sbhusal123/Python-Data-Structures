@@ -105,3 +105,5 @@ x = {'name': 'Ram',
 
 foo(**x)
 ```
+
+**Output*:* ``Ram lives at Bhopal``
