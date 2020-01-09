@@ -1,4 +1,4 @@
-#1. List
+# 1. List
 * General Purpose Data Structure.
 * Most widely used.
 * Size can be grown and shrinked as per the need.
@@ -154,3 +154,28 @@ l.sort(reverse=True)
 print(l) # [7, 6, 5, 3, 1]
 ```
 
+# Examples 
+
+ **1. List of Items that falls between two values**
+ 
+ Input: ``['Waste','Waste','Start','Data','Data','End','Waste', 'Start','Data','Data','Data','End']``
+ Desired Output: ``[['Start', 'Data', 'Data', 'End'], ['Start', 'Data', 'Data', 'Data', 'End']]``
+ 
+ Code:
+ ```python
+ payload = ['Waste','Waste','Start','Data','Data','End','Waste', 'Start','Data','Data','Data','End']
+
+
+start_indexes = [i for i,x in enumerate(payload) if x == 'Start']
+end_indexes = [i for i,x in enumerate(payload) if x == 'End']
+
+actual_data = []
+
+for i in range(0, len(start_indexes)):
+    actual_data.append(list(payload[start_indexes[i]:end_indexes[i]+1]))
+
+print(actual_data)
+    
+
+ ```
+ 
