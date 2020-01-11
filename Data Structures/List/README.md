@@ -156,10 +156,11 @@ print(l) # [7, 6, 5, 3, 1]
 
 # Examples 
 
- **1. List of Items that falls between two values**
+ ## 1. List of Items that falls between two values
  
- Input: ``['Waste','Waste','Start','Data','Data','End','Waste', 'Start','Data','Data','Data','End']``
- Desired Output: ``[['Start', 'Data', 'Data', 'End'], ['Start', 'Data', 'Data', 'Data', 'End']]``
+ **Input:** ``['Waste','Waste','Start','Data','Data','End','Waste', 'Start','Data','Data','Data','End']``
+ 
+ **Desired Output:** ``[['Start', 'Data', 'Data', 'End'], ['Start', 'Data', 'Data', 'Data', 'End']]``
  
  Code:
  ```python
