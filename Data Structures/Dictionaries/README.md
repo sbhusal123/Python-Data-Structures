@@ -107,3 +107,26 @@ foo(**x)
 ```
 
 **Output*:* ``Ram lives at Bhopal``
+
+## 10. Merging two dictionaries
+
+### a. Python 3.5+
+```python
+x = {'a': 1, 'b': 2}
+y = {'c': 3, 'd': 4}
+
+z = {**x, **y}
+
+print(z)
+```
+
+### b. Python 2.x
+```python
+x = {'a': 1, 'b': 2}
+y = {'c': 3, 'd': 4}
+
+z = dict(x, **y)
+
+```
+**Output**: ``{'a': 1, 'b': 2, 'c': 3, 'd': 4}``
+
