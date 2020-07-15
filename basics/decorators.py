@@ -46,4 +46,25 @@ def getText():
 # print(getText()) output: ['This', 'will', 'be', 'splitted', 'into', 'list']
 
 
+"""Accessing value returned by decorator in decorated function"""
+from functools import reduce
 
+def decorator(func):
+    def wrapper(*args, **kwargs):
+        kwargs['sum'] = reduce(lambda x,y: x+y, args)
+        return func(*args, **kwargs)
+    return wrapper
+
+@decorator
+def foo(x=0, y=0, sum=None):
+    # Here sum is returned by decorator
+    print(x+y)
+    return sum # 3
+
+print(foo(2, 3))
+
+"""
+Output:
+5
+5
+"""
